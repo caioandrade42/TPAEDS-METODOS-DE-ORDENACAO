@@ -116,7 +116,7 @@ function shellSort(vetor) {
     .concat(tempoExecucao / 1000, " segundos e o vetor resultado e ")
     .concat(vetor);
 }
-function QuickSort(vetor, comeco, final) {
+function quickSort(vetor, comeco, final) {
   if (comeco === void 0) {
     comeco = 0;
   }
@@ -142,16 +142,15 @@ function QuickSort(vetor, comeco, final) {
     }
   }
   if (comeco < j) {
-    QuickSort(vetor, comeco, j);
+    quickSort(vetor, comeco, j);
   }
   if (i < final) {
-    QuickSort(vetor, i, final);
+    quickSort(vetor, i, final);
   }
   var tempoExecucao = new Date().getTime() - inicio;
   return "Foram feitos "
     .concat(count, " movimentos em ")
-    .concat(tempoExecucao / 1000, " segundos e o vetor resultado e:  ")
-    .concat(vetor);
+    .concat(tempoExecucao / 1000, " segundos");
 }
 function MergeSort(items) {
   return divide(items);
@@ -198,4 +197,4 @@ function combine(low, high) {
   return combined;
 }
 
-console.log(ListaAleatoriaDezMil);
+console.log(bubbleSort(DicionarioAleatorio29855));

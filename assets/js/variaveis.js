@@ -1,6 +1,6 @@
 var fs_1 = require("fs");
 
-var DicionarioAleatorio29855 = (0, fs_1.readFileSync)(
+var DicionarioAleatorio29855 = FileReader(
   "../../instancias/DicionarioAleatorio-29855.txt",
   "utf-8"
 ).split("\r\n");
