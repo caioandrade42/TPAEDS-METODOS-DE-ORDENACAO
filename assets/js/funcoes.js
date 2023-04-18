@@ -197,4 +197,4 @@ function combine(low, high) {
   return combined;
 }
 
-console.log(bubbleSort(DicionarioAleatorio29855));
+console.log(DicionarioAleatorio29855);

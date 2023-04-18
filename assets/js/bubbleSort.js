@@ -2,6 +2,8 @@ var DicionarioAleatorio29855 = new FileReader(
   "../../instancias/DicionarioAleatorio-29855.txt",
   "utf-8"
 );
+
+const dicionario = readFileSync("variaveis.txt");
 window.onload = function () {
   var instancia = document.getElementById("instancias");
   console.log(DicionarioAleatorio29855);
