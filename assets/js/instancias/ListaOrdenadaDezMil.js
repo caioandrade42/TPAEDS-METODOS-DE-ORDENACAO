@@ -9999,5 +9999,4 @@ const ListaOrdenadaDezMil = [
   "9998",
   "9999",
   "10000",
-  "",
 ];

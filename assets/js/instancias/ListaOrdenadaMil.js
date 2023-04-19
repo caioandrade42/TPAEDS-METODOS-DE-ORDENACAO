@@ -999,5 +999,4 @@ const ListaOrdenadaMil = [
   "998",
   "999",
   "1000",
-  "",
 ];

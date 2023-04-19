@@ -25,13 +25,13 @@
         <h4>Shell Sort</h4>
         <div class="mb-3">
           <select class="form-control mb-3" name="instancias" id="instancias">
-            <option selected="true">Selecione</option>
+            <option selected="true" value="0">Selecione</option>
             <option value="1">Dicionario Aleatorio 29855</option>
             <option value="2">Dicionario Aleatorio 261791</option>
-            <option value="3">Dicionario Inversamente Ordenado 261791</option>
+            <option value="3">Dicionario Inversamente Ordenado 29855</option>
             <option value="4">Dicionario Inversamente Ordenado 261791</option>
-            <option value="5">Dicionario Ordenado 261791</option>
-            <option value="6">Dicionario Ordenado 29855</option>
+            <option value="5">Dicionario Ordenado 29855</option>
+            <option value="6">Dicionario Ordenado 261791</option>
             <option value="7">Lista Aleatória Mil</option>
             <option value="8">Lista Aleatória Dez Mil</option>
             <option value="9">Lista Aleatória Cem Mil</option>
@@ -49,10 +49,16 @@
             <option value="21">Lista Quase Ordenada Cem Mil</option>
             <option value="22">Lista Quase Ordenada Um Milhão</option>
           </select>
-          <textarea class="form-control mb-3" id="result" style="height: 150px">
-          </textarea>
           <div class="d-grid gap-2 mb-3">
             <button class="btn btn-primary" id="ordenar">Ordenar</button>
+          </div>
+          <div class="col mb-3 text-end">
+            <h4 class="mb-3 text-center" id="resultado">Resultado</h4>
+            <div class="d-grid gap-2 mb-3">
+              <button class="btn btn-success" id="download">
+                Baixar Resultado
+              </button>
+            </div>
           </div>
         </div>
         <div class="d-grid gap-2 mb-3">
@@ -65,7 +71,39 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
-    <script src="/assets/js/bubbleSort.js"></script>
-    <script src="/assets/js/variaveis.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+      integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/assets/js/instancias/dicionarioaleatorio261791.js"></script>
+    <script src="/assets/js/instancias/DicionarioAleatorio29855.js"></script>
+    <script src="/assets/js/instancias/DicionarioInversamenteOrdenado261791.js"></script>
+    <script src="/assets/js/instancias/DicionarioInversamenteOrdenado29855.js"></script>
+    <script src="/assets/js/instancias/DicionarioOrdenado261791.js"></script>
+    <script src="/assets/js/instancias/DicionarioOrdenado29855.js"></script>
+    <script src="/assets/js/instancias/ListaAleatoriaCemMil.js"></script>
+    <script src="/assets/js/instancias/ListaAleatoriaDezMil.js"></script>
+    <script src="/assets/js/instancias/ListaAleatoriaMil.js"></script>
+    <script src="/assets/js/instancias/ListaAleatoriaUmMilhao.js"></script>
+    <script src="/assets/js/instancias/ListaInversamenteOrdenadaCemMil.js"></script>
+    <script src="/assets/js/instancias/ListaInversamenteOrdenadaDezMil.js"></script>
+    <script src="/assets/js/instancias/ListaInversamenteOrdenadaMil.js"></script>
+    <script src="/assets/js/instancias/ListaInversamenteOrdenadaUmMilhao.js"></script>
+    <script src="/assets/js/instancias/ListaOrdenadaCemMil.js"></script>
+    <script src="/assets/js/instancias/ListaOrdenadaDezMil.js"></script>
+    <script src="/assets/js/instancias/ListaOrdenadaMil.js"></script>
+    <script src="/assets/js/instancias/ListaOrdenadaUmMilhao.js"></script>
+    <script src="/assets/js/instancias/ListaQuaseOrdenadaCemMil.js"></script>
+    <script src="/assets/js/instancias/ListaQuaseOrdenadaDezMil.js"></script>
+    <script src="/assets/js/instancias/ListaQuaseOrdenadaMil.js"></script>
+    <script src="/assets/js/instancias/ListaQuaseOrdenadaUmMilhao.js"></script>
+    <script src="/assets/js/shellSort.js"></script>
   </body>
 </html>

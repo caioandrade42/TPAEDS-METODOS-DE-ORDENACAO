@@ -999,5 +999,4 @@ const ListaAleatoriaMil = [
   "536",
   "395",
   "78",
-  "",
 ];
