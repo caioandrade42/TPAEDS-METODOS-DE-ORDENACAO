@@ -4,10 +4,7 @@ var DicionarioAleatorio29855 = (0, fs_1.readFileSync)(
   "../../instancias/DicionarioAleatorio-29855.txt",
   "utf-8"
 ).split("\r\n");
-var DicionarioAleatorio261791 = (0, fs_1.readFileSync)(
-  "../../instancias/DicionarioAleatorio-261791.txt",
-  "utf-8"
-).split("\r\n");
+
 var DicionarioInversamenteOrdenado29855 = (0, fs_1.readFileSync)(
   "../../instancias/DicionarioInversamenteOrdenado-29855.txt",
   "utf-8"
@@ -15,15 +12,15 @@ var DicionarioInversamenteOrdenado29855 = (0, fs_1.readFileSync)(
 var DicionarioInversamenteOrdenado261791 = (0, fs_1.readFileSync)(
   "../../instancias/DicionarioInversamenteOrdenado-261791.txt",
   "utf-8"
-).split("\r\n");
+).split("\n");
 var DicionarioOrdenado29855 = (0, fs_1.readFileSync)(
   "../../instancias/DicionarioOrdenado-29855.txt",
   "utf-8"
-).split("\r\n");
+).split("\n");
 var DicionarioOrdenado261791 = (0, fs_1.readFileSync)(
   "../../instancias/DicionarioOrdenado-261791.txt",
   "utf8"
-).split("\r\n");
+).split("\n");
 var ListaAleatoriaMil = (0, fs_1.readFileSync)(
   "../../instancias/ListaAleatoria-1000.txt",
   "utf-8"
@@ -90,7 +87,6 @@ var ListaQuaseOrdenadaUmMilhao = (0, fs_1.readFileSync)(
 ).split("\n");
 module.exports = {
   //exporta as variaveis declaradas
-  DicionarioAleatorio261791,
   DicionarioAleatorio29855,
   DicionarioInversamenteOrdenado261791,
   DicionarioInversamenteOrdenado29855,
@@ -113,14 +109,3 @@ module.exports = {
   ListaQuaseOrdenadaCemMil,
   ListaQuaseOrdenadaUmMilhao,
 };
-const uai = Uint32Array.from(DicionarioAleatorio261791);
-fs_1.writeFileSync(
-  "variaveis.txt",
-  JSON.stringify(DicionarioAleatorio261791),
-  function (err) {
-    if (err) {
-      console.error("deu ruim berg");
-    }
-  }
-);
-console.log(dicionario);

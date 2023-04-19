@@ -1,12 +1,24 @@
-var DicionarioAleatorio29855 = new FileReader(
-  "../../instancias/DicionarioAleatorio-29855.txt",
-  "utf-8"
-);
-
-const dicionario = readFileSync("variaveis.txt");
 window.onload = function () {
-  var instancia = document.getElementById("instancias");
-  console.log(DicionarioAleatorio29855);
+  let instancia = 0;
+  $("#instancias").on("change", function () {
+    instancia = $("#instancias").val();
+    console.log(instancia);
+  });
+  $("#ordenar").on("click", function () {
+    console.log("vc clicou ai hein");
+    switch (instancia) {
+      case 0:
+        swal(
+          "ERRO!",
+          "Voce deve selecionar uma instancia antes de continuar",
+          "error"
+        );
+        break;
+
+      default:
+        break;
+    }
+  });
 };
 
 function bubbleSort(vetor) {
