@@ -130,18 +130,18 @@ function selectionSort(vetor) {
       comparacoes++;
       if (vetor[j] < vetor[min]) {
         min = j;
+        count++;
       }
     }
     var aux = vetor[min];
     vetor[min] = vetor[i];
     vetor[i] = aux;
-    count++;
     console.log(vetor);
   }
   var tempoExecucao = new Date().getTime() - inicio;
   let resultado = document.getElementById("resultado");
   resultado.innerHTML = "foram feitos "
-    .concat(movimentos, " movimentos, e ")
+    .concat(count, " movimentos, e ")
     .concat(comparacoes, " comparações em ")
     .concat(tempoExecucao / 1000, " segundos");
   return "foram feitos "

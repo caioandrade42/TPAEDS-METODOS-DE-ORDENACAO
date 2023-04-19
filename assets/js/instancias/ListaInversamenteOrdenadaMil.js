@@ -999,5 +999,4 @@ const ListaInversamenteOrdenadaMil = [
   "3",
   "2",
   "1",
-  "",
 ];

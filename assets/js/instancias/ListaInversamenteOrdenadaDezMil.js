@@ -9999,5 +9999,4 @@ const ListaInversamenteOrdenadaDezMil = [
   "3",
   "2",
   "1",
-  "",
 ];
